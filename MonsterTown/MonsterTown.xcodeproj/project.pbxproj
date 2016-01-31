@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17E110E11C5E8D3A005D11D7 /* Major.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E110E01C5E8D3A005D11D7 /* Major.swift */; };
 		17E266621C5E47BC00EAA710 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E266611C5E47BC00EAA710 /* main.swift */; };
 		17E2666B1C5E48BE00EAA710 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2666A1C5E48BE00EAA710 /* Town.swift */; };
 		17E2666D1C5E4B4D00EAA710 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2666C1C5E4B4D00EAA710 /* Monster.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17E110E01C5E8D3A005D11D7 /* Major.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Major.swift; sourceTree = "<group>"; };
 		17E2665E1C5E47BC00EAA710 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E266611C5E47BC00EAA710 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		17E2666A1C5E48BE00EAA710 /* Town.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				17E2666C1C5E4B4D00EAA710 /* Monster.swift */,
 				17E2666E1C5E4C6B00EAA710 /* Zombie.swift */,
 				17E266701C5E598900EAA710 /* Vampire.swift */,
+				17E110E01C5E8D3A005D11D7 /* Major.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E266621C5E47BC00EAA710 /* main.swift in Sources */,
+				17E110E11C5E8D3A005D11D7 /* Major.swift in Sources */,
 				17E2666F1C5E4C6B00EAA710 /* Zombie.swift in Sources */,
 				17E2666D1C5E4B4D00EAA710 /* Monster.swift in Sources */,
 				17E266711C5E598900EAA710 /* Vampire.swift in Sources */,
@@ -255,6 +259,7 @@
 				17E266671C5E47BC00EAA710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

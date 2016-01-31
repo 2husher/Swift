@@ -9,8 +9,12 @@
 import Foundation
 
 var myTown = Town()
+myTown.major = Major()
+let ts: Town.Size = myTown.townSize
+print(ts)
 myTown.printTownDescription()
-//myTown.changePopulation(500)
+myTown.changePopulation(10_000_000)
+print("Town size \(ts) population \(myTown.population)")
 myTown.printTownDescription()
 
 let fredTheZombie = Zombie()
@@ -25,6 +29,18 @@ fredTheZombie.printTown()
 
 print(fredTheZombie.walksWithLimp)
 
+print("Victim pool: \(fredTheZombie.victimPool)")
+fredTheZombie.victimPool = 500
+print("Victim pool: \(fredTheZombie.victimPool)")
+print(Zombie.spookyNoise)
+if (Zombie.isTerrifying) {
+    print("Run away")
+}
+print(fredTheZombie.walksWithLimp)
+print(fredTheZombie.isFallingApart)
+//fredTheZombie.isFallingApart = true
+
+print("------------------------- Chapter 15 Challenge: Vampires -------------------------")
 var thralls:[Vampire] = []
 print(thralls)
 let dracula: Vampire = Vampire()
@@ -36,6 +52,8 @@ dracula.terrorizeTown()
 print("dracula's town \(dracula.town)")
 print("thralls \(thralls)")
 
+//print(fredTheZombie.town?.major?.anxietyLevel)
+//print(dracula.town?.major?.anxietyLevel)
 
 
 
