@@ -10,7 +10,7 @@ import Foundation
 
 class Monster {
     var town: Town?
-    var name = "Monster"
+    var name: String!
 
     static let isTerrifying = true
 
@@ -25,7 +25,16 @@ class Monster {
         set(newVictimPool) {
             town?.population = newVictimPool
         }
-     }
+    }
+
+    required init?(town: Town?, monsterName: String) {
+        if monsterName.isEmpty {
+            name = nil
+            return nil
+        }
+        self.town = town
+        name = monsterName
+    }
 
     func terrorizeTown() {
         if let town = town {

@@ -14,7 +14,7 @@ class Vampire: Monster {
 
     override func terrorizeTown() {
         town?.changePopulation(-1)
-        vampires.append(Vampire())
+        vampires.append(Vampire(town: nil, monsterName: "Dracula")!)
     }
 
     func printVampireDescription() {

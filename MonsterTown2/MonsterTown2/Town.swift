@@ -9,9 +9,10 @@
 import Foundation
 
 struct Town {
-    static let region = "South"
+    let region: String
 
-    var population = 5422 {
+//    var population = 5422 {
+    var population: Int {
         didSet(oldPopulation) {
             if population < oldPopulation {
                 print("NOTE: Population changed from \(oldPopulation) to \(population)")
@@ -20,9 +21,23 @@ struct Town {
         }
     }
     
-    var numberOfStoplights = 4
+    var numberOfStoplights: Int
 
     var mayor = Mayor()
+
+    init?(region: String, population: Int, stoplights: Int, mayor: Mayor) {
+        if population <= 0 {
+            return nil
+        }
+        self.region = region
+        self.population = population
+        numberOfStoplights = stoplights
+        self.mayor = mayor
+    }
+
+    init?(population: Int, stoplights: Int) {
+        self.init(region: "N/A", population: population, stoplights: stoplights, mayor: Mayor())
+    }
 
     enum Size {
         case Small
@@ -46,7 +61,7 @@ struct Town {
     }
 
     func printTownDescription() {
-        print("Town with population \(population) and \(numberOfStoplights) stoplights")
+        print("Town with population \(population) and \(numberOfStoplights) stoplights, region \(region)")
     }
 
     mutating func changePopulation(amount: Int) {
